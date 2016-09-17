@@ -12,20 +12,17 @@ namespace ClientTest
     {
         static void Main(string[] args)
         {
-            NetworkTable.SetClientMode();
-            NetworkTable.SetIPAddress("10.0.100.51");
+            NetworkTable.SetServerMode();
 
             NetworkTable.Initialize();
 
-            Thread.Sleep(1000);
-
-            NetworkTable tbl = NetworkTable.GetTable("Test");
-            Console.WriteLine(tbl.IsConnected);
-
-            foreach (var connectionInfo in NtCore.GetConnections())
+            RemoteProcedureCall.CreateRpc("Testing", new RpcDefinition(1, "TestRPC"), ((name, bytes, info) =>
             {
-                Console.WriteLine(connectionInfo);
-            }
+                Console.WriteLine(name);
+                Console.WriteLine(info.RemoteId);
+                Console.WriteLine(info.RemoteIp);
+                return new byte[2];
+            }));
 
             Thread.Sleep(Timeout.Infinite);
         }
