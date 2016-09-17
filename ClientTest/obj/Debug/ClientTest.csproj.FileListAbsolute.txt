@@ -1,0 +1,9 @@
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\bin\Debug\ClientTest.exe.config
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\bin\Debug\ClientTest.exe
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\bin\Debug\ClientTest.pdb
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\bin\Debug\FRC.NetworkTables.Core.dll
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\bin\Debug\FRC.NetworkTables.Core.pdb
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\bin\Debug\FRC.NetworkTables.Core.xml
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\obj\Debug\ClientTest.csprojResolveAssemblyReference.cache
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\obj\Debug\ClientTest.exe
+c:\users\thadh\documents\visual studio 2015\Projects\ClientTest\ClientTest\obj\Debug\ClientTest.pdb

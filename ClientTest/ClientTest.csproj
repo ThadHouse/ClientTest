@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FRC.NetworkTables.Core">
+      <HintPath>..\..\..\..\GitHub\RobotDotNet\NetworkTables\src\FRC.NetworkTables.Core\bin\Release\net45\FRC.NetworkTables.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
