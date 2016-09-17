@@ -13,7 +13,7 @@ namespace ClientTest
         static void Main(string[] args)
         {
             NetworkTable.SetClientMode();
-            NetworkTable.SetIPAddress("localhost");
+            NetworkTable.SetIPAddress("10.0.100.51");
 
             NetworkTable.Initialize();
 
