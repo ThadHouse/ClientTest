@@ -305,7 +305,6 @@
             </summary>
             <param name="name">The name of the callback</param>
             <param name="param">The binary data of the callback</param>
-            <param name="connInfo">The connection info of the requesting client</param>
             <returns>The raw rpc data to send in response</returns>
         </member>
         <member name="T:NetworkTables.EntryInfo">
@@ -1790,11 +1789,6 @@
             The Id of the Rpc call that set this polled value
             </summary>
         </member>
-        <member name="P:NetworkTables.RpcCallInfo.ConnInfo">
-            <summary>
-            The ConnectionInfo for the Rpc call that set this polled value
-            </summary>
-        </member>
         <member name="P:NetworkTables.RpcCallInfo.Name">
             <summary>
             The name of this call info
@@ -1805,13 +1799,12 @@
             The data from this rpc call
             </summary>
         </member>
-        <member name="M:NetworkTables.RpcCallInfo.#ctor(System.Int64,System.Int64,NetworkTables.ConnectionInfo,System.String,System.Byte[])">
+        <member name="M:NetworkTables.RpcCallInfo.#ctor(System.Int64,System.Int64,System.String,System.Byte[])">
             <summary>
             Creates a new polled RpcCallInfo def
             </summary>
             <param name="rpcId">The Rpc that is getting polled</param>
             <param name="callUid">The call Id that set this polled value</param>
-            <param name="connInfo">ConnectionInfo for the client that requested this call</param>
             <param name="name">The name of this polled call info</param>
             <param name="param">The data associated with this polled info</param>
         </member>

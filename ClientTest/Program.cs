@@ -14,15 +14,15 @@ namespace ClientTest
         {
             NetworkTable.SetServerMode();
 
+            NetworkTable.AddGlobalConnectionListener(((remote, info, conn) =>
+            {
+                Console.WriteLine(info.RemoteIp);
+                Console.WriteLine(info.RemoteId);
+            }), true);
+
             NetworkTable.Initialize();
 
-            RemoteProcedureCall.CreateRpc("Testing", new RpcDefinition(1, "TestRPC"), ((name, bytes, info) =>
-            {
-                Console.WriteLine(name);
-                Console.WriteLine(info.RemoteId);
-                Console.WriteLine(info.RemoteIp);
-                return new byte[2];
-            }));
+            
 
             Thread.Sleep(Timeout.Infinite);
         }
